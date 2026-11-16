@@ -1,0 +1,50 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "① 检索图片（自己输入路径）",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/rag_demo.py",
+      "args": ["--k", "8"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "env": {
+        "HF_ENDPOINT": "https://hf-mirror.com",
+        "HF_HUB_DISABLE_SYMLINKS_WARNING": "1"
+      },
+      "justMyCode": true
+    },
+    {
+      "name": "② 查看索引概况",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/rag_demo.py",
+      "args": ["--stats"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "env": {
+        "HF_ENDPOINT": "https://hf-mirror.com",
+        "HF_HUB_DISABLE_SYMLINKS_WARNING": "1"
+      },
+      "justMyCode": true
+    },
+    {
+      "name": "③ 留一法评测",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/rag_demo.py",
+      "args": ["--eval", "--k", "8"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+      "env": {
+        "HF_ENDPOINT": "https://hf-mirror.com",
+        "HF_HUB_DISABLE_SYMLINKS_WARNING": "1"
+      },
+      "justMyCode": true
+    }
+  ]
+}

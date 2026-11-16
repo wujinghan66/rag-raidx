@@ -1,0 +1,28 @@
+# ---- 虚拟环境（约 935 MB，不要提交） ----
+.venv/
+venv/
+env/
+
+# ---- 数据集（约 200 MB，用 download_images.py 重新拉取） ----
+dataset/
+
+# ---- 索引缓存（自动生成，可重建） ----
+index/
+
+# ---- 生成的 HTML 报告 ----
+output/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+
+# ---- 编辑器 / 系统 ----
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
